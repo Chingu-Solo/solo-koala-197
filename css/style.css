@@ -185,7 +185,7 @@ body #todosDock .todoContainer {
   height: 40vh;
   position: relative;
   overflow-y: scroll;
-  background-image: linear-gradient(90deg, transparent 0, transparent 25%, white 0, white 25.1%, transparent 0);
+  background-image: linear-gradient(90deg, transparent 0, transparent 25%, white 0, white 25.5%, transparent 0);
 }
 
 body #todosDock .todoContainer .todoItems {
