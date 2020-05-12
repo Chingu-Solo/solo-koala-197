@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>eCalendar</title>
+</head>
+<body>
+    <div id="calendar">
+        <div class="calendarHeader">
+          <div class="calendarTitle">eCalendar</div>
+          <div class="year calendarSubtitle"></div>
+        </div>
+        <div class="calendarBody">
+          <div class="months">
+            <div class="month month-prev"></div>
+            <div class="month month-current"></div>
+            <div class="month month-next"></div>
+          </div>
+          <div class="arrow left" id="prevMonth"></div>
+          <div class="arrow right" id="nextMonth"></div>
+          <hr>
+          <div class="calendarMain">
+            <div class="calendar-weekdays">
+              <div class="weekday weekend">Sun</div>
+              <div class="weekday workday">Mon</div>
+              <div class="weekday workday">Tue</div>
+              <div class="weekday workday">Wed</div>
+              <div class="weekday workday">Thu</div>
+              <div class="weekday workday">Fri</div>
+              <div class="weekday weekend">Sat</div>
+            </div>
+            <div class="calendar-days">
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <div id="todosDock">
+        <div class="btn SignIn">Sign-in</div>
+        <div class="currentDate">
+          <div class="currentWeekday">Monday</div>
+          <div class="currentDay">November 25</div>
+        </div>
+        <div class="todoContainer">
+          <div class="todoItems">
+          </div>
+        </div>
+        <div class="btn addTodo" id="addTodo">Add an event <i class="fa fa-plus-circle"></i></div>
+      </div>
+      
+      <div id="formModal">
+        <dialog id="formDialog">
+          <form method="dialog">
+            <input type="text" required id="todoEventInput" placeholder="Event">
+            <div class="dateSelector"><span>Start Date</span><input type="date" id="startDate" name="trip-start" value="2020-05-10" min="2020-01-01"><span>End Date</span><input type="date" id="endDate" name="trip-end" value="2018-07-22" min="2020-01-01"></div>
+            <div class="info"><i class="fa fa-user" aria-hidden="true"></i><input type="text" placeholder="People"></div>
+            <div class="info"><i class="fa fa-compass" aria-hidden="true"></i></i><input type="text" placeholder="Location"></div>
+            <div class="info"><i class="fa fa-file-text-o" aria-hidden="true"></i></i><input type="text" placeholder="Description"></div>
+            <menu>
+              <div id="confirmBtn" value="default">Confirm</div>
+              <div id="cancelBtn" value="cancel"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </menu>
+          </form>
+        </dialog>
+      </div>
+
+      <script src="js/main.js"></script>
+</body>
+</html>
