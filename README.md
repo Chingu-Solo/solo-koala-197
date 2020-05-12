@@ -2,7 +2,7 @@
 
 This project is completed with vanilla (plain) HTML, CSS, and JavaScript. 
 
-**Link** : https://chingu-solo.github.io/solo-koala-197/
+**Link** : https://deluxe-flashy-backbone.glitch.me/
 
 ## Dependecies
 
